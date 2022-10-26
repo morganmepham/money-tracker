@@ -62,3 +62,9 @@
 .view-all-trans-button:active{
     font-weight: 400;
 }
+
+@media screen and (max-width: 1000px) {
+    .money-sidebar{
+        display: none;
+    }
+}

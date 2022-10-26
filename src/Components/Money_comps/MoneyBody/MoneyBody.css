@@ -1,9 +1,19 @@
 .money-body{
-    width: 92%;
+    width: 90%;
     height: 100%;
 
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
     
+}
+@media screen and (max-width: 1000px) {
+    .money-body{
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 750px) {
+    .money-body{
+        width: 100%;
+    }
 }
