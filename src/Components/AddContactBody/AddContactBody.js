@@ -111,7 +111,7 @@ const AddContactBody = () => {
     }
 
     return (
-        <div className="transaction-body">
+        <div className="transaction-body contact-add-body">
             <form className="transaction-form">
                 <h2 className="add-contact-title">Add Contact</h2>
                 <p className="contact-name-text">Name: </p>
@@ -119,7 +119,7 @@ const AddContactBody = () => {
                     setName(e.target.value)
                     setNameColor({border: '0.2rem solid #34C885'})
                 }}/>
-                <p className="contact-type-text">Contact Type: </p>
+                <p className="contact-type-text">Type: </p>
                 <select className="contact-type-input" onChange={(e) => {
                     setType(e.target.value)
                 }}>
