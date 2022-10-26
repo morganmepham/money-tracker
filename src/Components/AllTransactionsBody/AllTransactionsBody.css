@@ -33,3 +33,29 @@
     border-radius: 1rem;
 }
 
+@media screen and (max-width: 1000px) {
+    .all-trans-title{
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width: 750px) {
+    .all-trans-body{
+        width: 100%;
+    }
+    .all-trans-title{
+        font-size: 2.6rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    .all-trans-title{
+        font-size: 2.2rem;
+    }
+    .all-trans-div{
+        padding: 0.3rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    .all-trans-title{
+        font-size: 2rem;
+    }
+}
