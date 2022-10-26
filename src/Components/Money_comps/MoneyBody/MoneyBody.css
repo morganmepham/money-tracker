@@ -4,8 +4,10 @@
 
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-start;
-    
+    align-items: stretch;    
+}
+.mobile-money-buttons{
+    display: none;
 }
 @media screen and (max-width: 1000px) {
     .money-body{
@@ -15,5 +17,48 @@
 @media screen and (max-width: 750px) {
     .money-body{
         width: 100%;
+    }
+    .mobile-money-buttons{
+        height: 10%;
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        margin-bottom: 1rem;
+    }
+    .mobile-view-transactions,
+    .mobile-add-transaction{
+        width: 40%;
+        height: 70%;
+        margin-right: 0.5rem;
+        background-color: #119B5D;
+        border: none;
+        border-radius: 1rem;
+        color: #fff;
+        font-size: 1.4rem;
+        cursor: pointer;
+    }
+    .mobile-view-transactions:hover,
+    .mobile-add-transaction:hover{
+        font-weight: 600;
+    }
+    .mobile-view-transactions:active,
+    .mobile-add-transaction:active{
+        font-weight: 400;
+    }
+
+}
+@media screen and (max-width: 500px) {
+    .mobile-view-transactions,
+    .mobile-add-transaction{
+        width: 50%;
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    .mobile-view-transactions,
+    .mobile-add-transaction{
+        width: 50%;
+        font-size: 1rem;
     }
 }
