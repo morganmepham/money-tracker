@@ -1,0 +1,19 @@
+.green-button{
+    grid-column: 2/6;
+    grid-row: 7/9;
+    width: 100%;
+    height: 40%;
+    background-color: #34C885;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.7rem;
+    color: #fff;
+    box-shadow: 0.2rem 0.3rem #26b675;
+    margin: 0.7rem;
+}
+.green-button:hover{
+    font-weight: 600;
+}
+.green-button:active{
+    font-weight: 500;
+}

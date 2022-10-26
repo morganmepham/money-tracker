@@ -1,0 +1,276 @@
+.account-info-body-div{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+}
+.account-info-body-title{
+    font-size: 4rem;
+    color: #34C885;
+    width: 100%;
+    height: 14%;
+    text-align: center;
+}
+.account-info-form{
+    width: 90%;
+    padding: 1rem;
+    height: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    scrollbar-width: 1rem;
+    scrollbar-color: #34C885 #fff;
+
+}
+.account-info-form::-webkit-scrollbar{
+    width: 1rem;
+}
+.account-info-form::-webkit-scrollbar-track{
+    background: #fff;
+}
+.account-info-form::-webkit-scrollbar-thumb{
+    background: #34C885;
+    border-radius: 1rem;
+}
+
+.AI-set-div{
+    height: 30%;
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem;
+}
+.AI-username-text{
+    width: 100%;
+    font-size: 4rem;
+    color: #34C885;
+    margin-bottom: 2rem;
+}
+.symbol-tag{
+    font-size: 2rem;
+    height: 35%;
+    margin-left: 0.2rem;
+    color: #34C885;
+}
+.AI-set-nickname-text,
+.AI-set-budget-text,
+.AI-set-budget-from-text,
+.AI-set-budget-till-text,
+.AI-set-currency-text,
+.AI-set-pic-text{
+    width: 100%;
+    font-size: 2rem;
+    color: #34C885;
+    margin-bottom: 1rem;
+}
+.AI-nickname-input,
+.AI-budget-input,
+.AI-budget-from-input,
+.AI-budget-till-input,
+.AI-currency-input,
+.AI-set-pic-input{
+    width: 45%;
+    height: 35%;
+    font-size: 2rem;
+    padding-left: 0.5rem;
+    margin-left: 2rem;
+
+    border: 0.2rem solid #085230;
+}
+.AI-budget-input{
+    margin-left: 1rem;
+}
+.AI-cancel-changes{
+    height: 50%;
+    width: 25%;
+    background-color: #db2525;
+    border: none;
+    border-radius: 1rem;
+    color: #fff;
+    font-size: 1.6rem;
+    margin-top: 2rem;
+}
+.AI-save-changes{
+    height: 50%;
+    width: 25%;
+    margin-left: 2rem;
+    border: none;
+    border-radius: 1rem;
+    color: #fff;
+    font-size: 1.6rem;
+    background-color: #085230;
+    margin-top: 2rem;
+}
+.AI-cancel-changes:hover,
+.AI-save-changes:hover{
+    font-weight: 600;
+}
+.AI-cancel-changes:active,
+.AI-save-changes:active{
+    font-weight: 400;
+}
+.AI-error-div{
+    height: 10%;
+}
+.save-invalid-text{
+    color: red;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+    height: fit-content;
+}
+
+@media screen and (max-width: 1000px) {
+    .account-info-body-title{
+        font-size: 3rem;
+        height: 10%;
+    }
+    .AI-username-text{
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    .AI-set-nickname-text,
+    .AI-set-budget-text,
+    .AI-set-budget-from-text,
+    .AI-set-budget-till-text,
+    .AI-set-currency-text,
+    .AI-set-pic-text,
+    .symbol-tag{
+        font-size: 1.6rem;
+    }
+    .AI-nickname-input,
+    .AI-budget-input,
+    .AI-budget-from-input,
+    .AI-budget-till-input,
+    .AI-currency-input,
+    .AI-set-pic-input{
+        font-size: 1.6rem;
+        height: 30%;
+    }
+    .AI-cancel-changes,
+    .AI-save-changes{
+        font-size: 1.4rem;
+        height: 40%;
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .account-info-body-div{
+        width: 100%;
+    }
+    .account-info-body-title{
+        font-size: 2.5rem;
+    }
+    .AI-set-div{
+        height: 20%;
+    }
+    .AI-username-text{
+        font-size: 2.5rem;
+        margin-bottom: 0.7rem;
+    }
+    .AI-set-nickname-text,
+    .AI-set-budget-text,
+    .AI-set-budget-from-text,
+    .AI-set-budget-till-text,
+    .AI-set-currency-text,
+    .AI-set-pic-text,
+    .symbol-tag{
+        font-size: 1.4rem;
+    }
+    .AI-nickname-input,
+    .AI-budget-input,
+    .AI-budget-from-input,
+    .AI-budget-till-input,
+    .AI-currency-input,
+    .AI-set-pic-input{
+        font-size: 1.4rem;
+        height: 25%;
+        width: 60%;
+        margin-left: 1rem;
+    }
+    .AI-cancel-changes,
+    .AI-save-changes{
+        font-size: 1.2rem;
+        height: 35%;
+        width: 35%;
+    }
+    .save-invalid-text{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .account-info-body-title{
+        font-size: 2rem;
+    }
+    .AI-set-div{
+        height: 15%;
+    }
+    .AI-username-text{
+        font-size: 2rem;
+        margin-bottom: 0.3rem;
+    }
+    .AI-set-nickname-text,
+    .AI-set-budget-text,
+    .AI-set-budget-from-text,
+    .AI-set-budget-till-text,
+    .AI-set-currency-text,
+    .AI-set-pic-text,
+    .symbol-tag{
+        font-size: 1.2rem;
+    }
+    .AI-nickname-input,
+    .AI-budget-input,
+    .AI-budget-from-input,
+    .AI-budget-till-input,
+    .AI-currency-input,
+    .AI-set-pic-input{
+        font-size: 1.2rem;
+        height: 30%;
+        width: 65%;
+        margin-left: 0.5rem;
+    }
+    .AI-cancel-changes,
+    .AI-save-changes{
+        font-size: 1rem;
+        height: 35%;
+        width: 45%;
+        margin: 0.4rem;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .save-invalid-text{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .account-info-body-title{
+        font-size: 1.7rem;
+    }
+    .AI-username-text{
+        font-size: 1.7rem;
+        margin-bottom: 0.3rem;
+    }
+    .AI-nickname-input,
+    .AI-budget-input,
+    .AI-budget-from-input,
+    .AI-budget-till-input,
+    .AI-currency-input,
+    .AI-set-pic-input{
+        width: 90%;
+    }
+    .AI-cancel-changes,
+    .AI-save-changes{
+        font-size: 1.2rem;
+        height: 35%;
+        width: 85%;
+    }
+    .save-invalid-text{
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,35 @@
+.all-trans-body{
+    width: 92%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+.all-trans-title{
+    width: 100%;
+    font-size: 4rem;
+    color: #34C885;
+    text-align: center;
+    margin: 1rem;
+}
+.all-trans-div{
+    width: 90%;
+    height: 88%;
+    border: 0.2rem solid #34C885;
+    padding: 1rem;
+    overflow-y: scroll;
+    scrollbar-width: 1rem;
+    scrollbar-color: #34C885 #fff;
+}
+.all-trans-div::-webkit-scrollbar{
+    width: 1rem;
+}
+.all-trans-div::-webkit-scrollbar-track{
+    background: #fff;
+}
+.all-trans-div::-webkit-scrollbar-thumb{
+    background: #34C885;
+    border-radius: 1rem;
+}
+

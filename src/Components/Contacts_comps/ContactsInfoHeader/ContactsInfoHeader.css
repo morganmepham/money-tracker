@@ -1,0 +1,42 @@
+.contact-info-header{
+    width: 80%;
+    height: 15%;
+
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    align-items: center;
+    position: relative;
+    left: 0;
+}
+
+.contact-info-back-button{
+    background-color: #34C885;
+    color: #fff;
+    border: none;
+    border-radius: 1rem;
+    font-size: 2rem;
+    width: 60%;
+    height: 40%;
+    justify-self: center;
+}
+.contact-info-back-button:hover{
+    font-weight: 600;
+}
+.contact-info-back-button:active{
+    font-weight: 400;
+}
+.contact-info-name{
+    grid-column: 2/3;
+    font-size: 5rem;
+    color: #34C885;
+    text-align: end;
+    margin-right: 1rem;
+}
+.contact-info-pp{
+    grid-column: 3/4;
+    justify-self: center;
+
+    border: 0.2rem solid #34C885;
+    border-radius: 50%;
+    padding: 0.3rem;
+}

@@ -1,0 +1,7 @@
+.pie-chart{
+    width: 65%;
+    height: fit-content;
+    margin: 2rem;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}

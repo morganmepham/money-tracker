@@ -1,0 +1,24 @@
+.user-body{
+    width: 92%;
+    height: 100%;
+
+    /* display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start; */
+
+    display: grid;
+    grid-template-columns: 5fr 5fr 1.5fr;
+    grid-template-rows: 1fr 10fr;
+    grid-template-rows: 15% 85%;
+
+}
+
+@media screen and (max-width: 750px) {
+    .user-body{
+        grid-template-columns: 10fr 2fr;
+        grid-template-rows: 12% 44% 44%;
+        height: 90%;
+        width: 100%;
+    }
+}

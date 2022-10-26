@@ -1,0 +1,45 @@
+.money-header-div{
+    width: 76%;
+    height: 25%;
+    margin-left: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 1rem;
+    padding-bottom: 0;
+}
+
+
+.money-spent-div,
+.money-remaining-div,
+.money-budget-div{
+    margin-bottom: 2rem;
+    grid-row: 2/3;
+}
+.money-spent,
+.money-remaining,
+.money-budget{
+    font-size: 2rem;
+    color: #ffffff;
+    background-color: #239461;
+    width: fit-content;
+    border-radius: 1rem;
+    padding: 1rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+.money-spent-title,
+.money-remaining-title,
+.money-budget-title{
+    font-size: 2rem;
+    color: #34C885;
+}
+
+.money-date-from-div,
+.money-date-to-div{
+    font-size: 2rem;
+    color: #34C885;
+}
+.money-date-to-div{
+    justify-self: center;
+}

@@ -1,13 +1,9 @@
-.App{
+.money-body{
+    width: 92%;
     height: 100%;
-    width: 100%;
+
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
-}
-.user-div{
-    width: 92%;
-}
-a{
-    text-decoration: none;
+    
 }

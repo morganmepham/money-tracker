@@ -1,0 +1,38 @@
+.contacts-info-sidebar{
+    width: 20%;
+    height: 95%;
+
+    position: absolute;
+    right: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contacts-info-total,
+.contacts-info-trans-count,
+.contact-info-contact-type{
+    font-size: 2rem;
+    color: #34C885;
+    margin-top: 1rem;
+    width: 100%;
+}
+.contacts-info-total{
+    margin-top: 3rem;
+}
+.remove-contact-button{
+    height: 8%;
+    width: 70%;
+    border: none;
+    align-self: flex-end;
+    background-color: #be2727;
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 1rem;
+}
+.remove-contact-button:hover{
+    font-weight: 600;
+}
+.remove-contact-button:active{
+    font-weight: 400;
+}

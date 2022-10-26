@@ -1,0 +1,79 @@
+.user-sidebar{
+    box-sizing: border-box;
+    width: 100%;
+    height: 90%;
+    border-left: 0.2rem solid #119B5D;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+
+    grid-column: 3/4;
+    grid-row: 1/3;
+
+    /* position: fixed;
+    right: 0; */
+}
+.version,
+.account-info,
+.settings{
+    width: 90%;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #119B5D;
+}
+.version{
+
+    grid-row: 1/2;
+
+}
+.account-info:hover{
+    font-weight: 600;
+}
+.account-info:active{
+    font-weight: 400;
+}
+.account-info{
+    grid-row: 5/6;
+}
+
+.settings{
+    grid-row: 6/7;
+}
+@media screen and (max-width: 1200px) {
+   .version,
+   .account-info,
+   .settings{
+       font-size: 1.3rem;
+   }
+}
+@media screen and (max-width: 900px) {
+    .version,
+    .account-info,
+    .settings{
+        font-size: 1.1rem;
+    }
+ }
+ @media screen and (max-width: 750px) {
+     .user-sidebar{
+         grid-column: 2/3;
+         grid-row: 1/4;
+    }
+}
+
+@media screen and (max-width: 500px) {
+       .version,
+       .account-info,
+       .settings{
+           font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    .version,
+    .account-info,
+    .settings{
+        font-size: 0.7rem;
+ }
+}

@@ -1,0 +1,64 @@
+.money-sidebar{
+    width: 18%;
+    height: 100%;
+    position: fixed;
+    right: 0;
+}
+.money-sidebar-buttons-div{
+    height: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.money-user-display-div{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-auto-rows: auto;
+    margin-top: 2rem;
+    align-items: center;
+}
+.money-user-pic{
+    border-radius: 50%;
+    border: 0.2rem solid#119B5D;
+    justify-self: end;
+    margin-right: 0.8rem;
+    padding: 0.3rem;
+}
+.money-user-name{
+    font-size: 2.3rem;
+    color: #119B5D;
+}
+
+
+.money-buttons-div{
+    position: fixed;
+    bottom: 0;
+
+    height: 25%;
+    width: 17%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.money-add-transaction,
+.view-all-trans-button{
+    width: 100%;
+    height: 25%;
+    margin-right: 0.5rem;
+    background-color: #119B5D;
+    border: none;
+    border-radius: 1rem;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.money-add-transaction:hover,
+.view-all-trans-button:hover{
+    font-weight: 600;
+}
+.money-add-transaction:active,
+.view-all-trans-button:active{
+    font-weight: 400;
+}

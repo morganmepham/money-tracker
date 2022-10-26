@@ -1,0 +1,7 @@
+.bar-chart{
+    width: 90%;
+    height: fit-content;
+    margin: 2rem;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}

@@ -1,0 +1,92 @@
+.navbar{
+    height: 100%;
+    width: 8%;
+    background-color: #34C885;
+
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; */
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+
+    position: relative;
+}
+.navbar-icon{
+    width: 100%;
+}
+.navbar-link{
+    width: 100%;
+}
+.nav-logo{
+    grid-row: 1/2;
+}
+.nav-user{
+    grid-row: 2/3;
+}
+.nav-money{
+    grid-row: 3/4;
+}
+.nav-contacts{
+    grid-row: 4/5;
+}
+.nav-help{
+    grid-row: 5/6;
+}
+
+@media screen and (max-width: 750px) {
+    .navbar{
+        /* grid-template-columns: repeat(4, 1fr);;
+        grid-template-rows: 1fr;
+        justify-content: center;
+        align-items: flex-start; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: static;
+
+        width: 100%;
+        height: 10%;
+        position: fixed;
+        bottom: 0;
+    }
+     .navbar-icon{
+        width: 100%;
+        height: 100%;
+    } 
+    .navbar-link{
+        width: 17%;
+        height: 100%;
+    }
+    .nav-logo{
+        display: none;
+    }
+    .nav-user{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .nav-money{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .nav-contacts{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    .nav-help{
+        grid-column: 4/5;
+        grid-row: 1/2;
+    }
+}
+@media screen and (max-width: 650px) {
+     .navbar-icon{
+        width: 100%;
+        height: 100%;
+    } 
+    .navbar-link{
+        width: 25%;
+        height: 100%;
+    }
+}

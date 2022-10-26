@@ -1,0 +1,116 @@
+.top-div-item{
+    display: grid;
+    grid-template-rows: 1fr 8fr;
+    height: 90%;
+    width: 90%; 
+    margin-top: 0;
+    background-color: #119B5D;
+    grid-row: 2/3;
+    justify-self: center;
+}
+
+.top-loc-div{
+    border: 0.45rem solid #119B5D;
+    grid-row: 2/3;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.top-loc-title{
+    grid-row: 1/2;
+    background-color: #119B5D;
+    color: #fff;
+    font-size: 2rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top-loc-entry{
+    width: 95%;
+    height: 15%;
+    margin: 0.5rem;
+    
+    border-bottom: 0.2rem solid #119B5D;
+    font-size: 1.5rem;
+    color: #119B5D;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+.no-results-text{
+    width: 100%;
+    text-align: center;
+    color: #119B5D;
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+@media screen and (max-width: 1200px) {
+    .top-loc-title{
+        font-size: 1.6rem;
+    }
+    .top-loc-div{
+        border: 0.3rem solid #119B5D;
+    }
+    .no-results-text{
+        font-size: 1.7rem;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .top-loc-title{
+        font-size: 1.4rem;
+    }
+    .no-results-text{
+        font-size: 1.5rem;
+    }
+    .top-loc-entry{
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width: 800px) {
+    .top-loc-title{
+        font-size: 1.2rem;
+    }
+    .no-results-text{
+        font-size: 1.3rem;
+    }
+    .top-loc-entry{
+        font-size: 1.1rem;
+    }
+    .top-div-item{
+        width: 95%;
+    }
+}
+@media screen and (max-width: 750px) {
+    .loc-item{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .contact-item{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .top-loc-title{
+        font-size: 1rem;
+    }
+    .no-results-text{
+        font-size: 1.1rem;
+    }
+    .top-loc-entry{
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    .top-loc-title{
+        font-size: 1rem;
+    }
+    .no-results-text{
+        font-size: 1.1rem;
+    }
+    .top-loc-entry{
+        font-size: 0.8rem;
+    }
+}
