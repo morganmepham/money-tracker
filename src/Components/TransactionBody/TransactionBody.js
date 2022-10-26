@@ -124,7 +124,7 @@ const TransactionBody = () => {
                         setSearchResults(null)
                     }
                 }}/>
-                <input type="button" className="transaction-add-contact-button" value='Add a contact' onClick={handleAddContact}/>
+                <input type="button" className="transaction-add-contact-button" value='Add contact' onClick={handleAddContact}/>
 
                 {searchResults !== null && <div className="search-results-disp-div">
                     {searchResults.map((result) => {
