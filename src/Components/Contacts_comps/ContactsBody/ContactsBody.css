@@ -11,6 +11,7 @@
     color: #34C885;
     text-align: center;
     margin: 2rem;
+    order: 1;
 }
 .contacts-list-div{
     width: 70%;
@@ -18,12 +19,11 @@
     border: 0.4rem solid #34C885;
     padding: 1rem;
 
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-rows: 8rem;
+
     overflow-y: scroll;
     scrollbar-width: 1rem;
     scrollbar-color: #34C885 #fff;
+    order: 2;
 }
 .contacts-list-div::-webkit-scrollbar{
     width: 1rem;
@@ -37,7 +37,7 @@
 }
 
 .contact-list-item{
-    height: 8rem;
+    
     margin-bottom: 1rem;
     border-bottom: 0.2rem solid #34C885;
 
@@ -57,10 +57,11 @@
     justify-content: center;
     align-content: flex-start;
     position: relative;
+    order: 3;
 }
 
 .contacts-add-button{
-    width: 60%;
+    width: 70%;
     height: 10%;
 
     background-color: #34C885;
@@ -86,4 +87,167 @@
     height: 10%;
     width: 100%;
     color: #34C885;
+}
+
+@media screen and (max-width: 1400px) {
+    .contacts-title{
+        font-size: 3rem;
+    }
+
+    .contacts-list-div{
+        grid-template-rows: 6.5rem;
+    }
+    .contact-list-item{
+        height: 6.5rem;
+    }
+    .contact-list-item-name{
+        font-size: 2.5rem;
+    }
+    .contact-list-item-pic{
+        height: 90%;
+    }
+
+    .contacts-add-button{
+        font-size: 1.8rem;
+    }
+    .total-contacts-text,
+    .total-companies-text,
+    .total-people-text{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .contacts-title{
+        font-size: 3rem;
+    }
+
+    .contacts-list-div{
+        grid-template-rows: 5.5rem;
+        padding: 0.4rem;
+        align-content: flex-start;
+    }
+    .contact-list-item{
+        height: 5.5rem;
+        margin-bottom: 0;
+    }
+    .contact-list-item-name{
+        font-size: 2.2rem;
+    }
+    .contact-list-item-pic{
+        height: 70%;
+    }
+
+    .contacts-add-button{
+        font-size: 1.5rem;
+    }
+    .total-contacts-text,
+    .total-companies-text,
+    .total-people-text{
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .contacts-list-div{
+        grid-template-rows: 5rem;
+        padding: 0.4rem;
+        align-content: flex-start;
+    }
+    .contact-list-item{
+        height: 5rem;
+        margin-bottom: 0;
+    }
+    .contact-list-item-name{
+        font-size: 2rem;
+    }
+    .contact-list-item-pic{
+        height: 50%;
+    }
+
+    .contacts-add-button{
+        font-size: 1.3rem;
+        height: 7%;
+        width: 80%;
+    }
+    .total-contacts-text,
+    .total-companies-text,
+    .total-people-text{
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width: 750px) {
+    .contacts-body-div{
+        width: 100%;
+        align-content: flex-start;
+    }
+    .contacts-title{
+        margin: 1rem;
+        margin-bottom: 3rem;
+        height: 3%;
+    }
+    .contact-list-item{
+        height: 5rem;
+        margin-bottom: 0;
+    }
+
+    .contacts-list-div{
+        order: 3;
+        height: 65%;
+        width: 85%;
+        margin-top: 0.3rem;
+    }
+    .contacts-side-div{
+        order: 2;
+        width: 100%;
+        height: 13%;
+        justify-content: space-around;
+        align-content: space-between;
+    }
+
+    .contacts-add-button{
+        font-size: 1.3rem;
+        height: 35%;
+        width: 30%;
+        position: static;
+        margin-bottom: 0.2rem;
+    }
+    .total-contacts-text,
+    .total-companies-text,
+    .total-people-text{
+        font-size: 1rem;
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 500px ) {
+    .total-contacts-text,
+    .total-companies-text,
+    .total-people-text{
+        display: none;
+    }
+    .contacts-side-div{
+        height: 7%;
+        align-content: center;
+    }
+    .contacts-add-button{
+        font-size: 1.3rem;
+        height: 50%;
+        width: 50%;
+        position: static;
+        margin-bottom: 0.2rem;
+    }
+    .contacts-list-div{
+        height: 70%;
+
+    }
+    .contact-list-item{
+        height: 3rem;
+        grid-auto-rows: 3rem;
+    }
+    .contact-list-item-name{
+        font-size: 1.3rem;
+    }
+    .contact-list-item-pic{
+        height: 70%;
+    }
 }
