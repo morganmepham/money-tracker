@@ -29,12 +29,13 @@ const ContactsInfoBody = () => {
     return (
         <div className="contacts-info-body">
             <ContactsInfoHeader contact={contact}/>
+            
             <h2 className="contacts-info-trans-title">Transactions</h2>
             <div className="contacts-info-trans-div">
                 {sorted.map((transaction) => {
                     return <div className="contact-info-trans-item" key={transaction.dateCode}>
                         <p className="contact-trans-item-amount">{`${user.currency}${transaction.amount}`}</p>
-                        <p className="contact-trans-item-name">{transaction.dateStamp}</p>
+                        <p className="contact-trans-item-date">{transaction.dateStamp}</p>
                     </div>
                 })}
             </div>

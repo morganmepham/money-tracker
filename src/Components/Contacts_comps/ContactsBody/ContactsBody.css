@@ -231,13 +231,14 @@
     }
     .contacts-add-button{
         font-size: 1.3rem;
-        height: 50%;
+        height: 100%;
         width: 50%;
         position: static;
         margin-bottom: 0.2rem;
     }
     .contacts-list-div{
         height: 70%;
+        width: 94%;
 
     }
     .contact-list-item{
