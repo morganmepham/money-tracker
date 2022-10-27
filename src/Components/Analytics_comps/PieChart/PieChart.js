@@ -28,24 +28,13 @@ const dataTest = {
         backgroundColor: colors,
         borderColor: "#000",
         data: pieData,
-      },
-    ],
-  };
-  const options = {
-    plugins: {
-      title: {
-          display: true,
-          text: 'Budget',
-          font: {
-            size: 40
-          }
       }
-  }
+    ]
+  };
 
-  }
     return (
         <div className='pie-chart'>
-          <Pie data={dataTest} options={options}/>
+          <Pie data={dataTest}/>
         </div>
       );
 };

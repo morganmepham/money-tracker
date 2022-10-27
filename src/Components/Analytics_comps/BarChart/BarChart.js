@@ -46,13 +46,6 @@ const BarChart = () => {
 
   const options = {
     plugins: {
-      title: {
-          display: true,
-          text: 'Top Contacts',
-          font: {
-            size: 40
-          }
-      },
       legend: {
         display: false
       }

@@ -3,5 +3,6 @@
     height: fit-content;
     margin: 2rem;
     grid-column: 2/3;
-    grid-row: 2/3;
+    grid-row: 3/4;
+    align-self: flex-start;
 }
