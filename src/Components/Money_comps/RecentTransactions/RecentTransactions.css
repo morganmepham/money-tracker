@@ -69,5 +69,6 @@
     .recent-transactions-div{
         grid-auto-rows: 2rem;
         height: 40%;
+        padding: 0.2rem;
     }
 }

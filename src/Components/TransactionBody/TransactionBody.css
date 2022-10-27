@@ -151,7 +151,7 @@
     border-top: none;
     position: absolute;
     /* bottom: 31.2rem; */
-    top: 5rem;
+    top: 5.5rem;
     z-index: 2;
     padding: 0.6rem;
     padding-top: 1.5rem;
@@ -192,6 +192,87 @@
     height: 50%;
     font-size: 1.2rem;
 }
+@media screen and (max-height: 1000px) {
+    .search-results-disp-div{
+        top: 5rem
+    }
+}
+@media screen and (max-height: 900px) {
+    .search-results-disp-div{
+        top: 4.3rem
+    }
+}
+@media screen and (max-height: 800px) {
+    .search-results-disp-div{
+        top: 3.8rem
+    }
+}
+@media screen and (max-height: 700px) {
+    .search-results-disp-div{
+        top: 3.2rem;
+        grid-auto-rows: 3rem;
+    }
+    .search-item{
+        grid-auto-rows: 3rem;
+    }
+}
+@media screen and (max-height: 600px) and (max-width: 750px){
+    .search-results-disp-div{
+        top: 2.8rem;
+        grid-column: 2/6;
+    }
+}
+
+
+
+@media screen and (max-height: 1300px) and (max-width: 750px) {
+    .search-results-disp-div{
+        top: 2.5rem;
+        grid-column: 2/6;
+        grid-auto-rows: 3rem;
+    }
+    .search-item{
+        height: auto;
+        grid-auto-rows: 3rem;
+    }
+    .search-item-contact-name{
+        font-size: 1.2rem;
+    }
+    .search-item-contact-img{
+        height: 100%;
+        align-self: center; 
+    }
+}
+@media screen and (max-height: 1300px) and (max-width: 600px) {
+    .search-item-contact-name{
+        font-size: 1rem;
+        margin-bottom: 0.2rem;
+    }
+    .search-item-contact-img{
+        height: 90%;
+        align-self: center; 
+    }
+}
+
+@media screen and (max-height: 1300px) and (max-width: 500px) {
+    .search-results-disp-div{
+        grid-column: 2/9;
+        grid-auto-rows: 2rem;
+    }
+    .search-item{
+        height: auto;
+        grid-auto-rows: 2rem;
+    }
+    .search-item-contact-name{
+        font-size: 1rem;
+        margin-bottom: 0.2rem;
+    }
+    .search-item-contact-img{
+        height: 90%;
+        align-self: center; 
+    }
+}
+
 
 @media screen and (max-width: 1300px) {
     .transaction-form{
@@ -265,9 +346,14 @@
     }
     .transaction-review-amount{
         grid-row: 6/7;
+        font-size: 1rem;
     }
     .transaction-review-to{
         grid-row: 5/6;
+        font-size: 1rem;
+    }
+    .transaction-review-from{
+        font-size: 1rem;
     }
     .transaction-clear-button{
         grid-row: 6/7;
