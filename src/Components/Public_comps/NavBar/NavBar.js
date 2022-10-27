@@ -4,11 +4,13 @@ import user_icon from '../../../images/user_icon.png'
 import pound_icon from '../../../images/pound_icon.png'
 import contacts_icon from '../../../images/contacts_icon.png'
 import help_icon from '../../../images/help_icon.png'
+import analytics_icon from '../../../images/analytics_icon.png'
 
 import clicked_user_icon from '../../../images/clicked_user_icon.png'
 import clicked_pound_icon from '../../../images/clicked_pound_icon.png'
 import clicked_contacts_icon from '../../../images/clicked_contacts_icon.png'
 import clicked_help_icon from '../../../images/clicked_help_icon.png'
+import clicked_analytics_icon from '../../../images/clicked_analytics_icon.png'
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
@@ -61,9 +63,9 @@ const NavBar = () => {
 
             {contactsIsOpen && <Link to='/contacts' className='navbar-link nav-contacts'><img src={clicked_contacts_icon} alt="contacts_icon" className='navbar-icon'/></Link>}
 
-            {!analyticsIsOpen && <Link to='/analytics' className='navbar-link nav-help'><img src={help_icon} alt="help_icon" className='navbar-icon'/></Link>}
+            {!analyticsIsOpen && <Link to='/analytics' className='navbar-link nav-help'><img src={analytics_icon} alt="help_icon" className='navbar-icon'/></Link>}
 
-            {analyticsIsOpen && <Link to='/analytics' className='navbar-link nav-help'><img src={clicked_help_icon} alt="help_icon" className='navbar-icon'/></Link>}
+            {analyticsIsOpen && <Link to='/analytics' className='navbar-link nav-help'><img src={clicked_analytics_icon} alt="help_icon" className='navbar-icon'/></Link>}
 
         </nav>
     );
